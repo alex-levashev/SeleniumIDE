@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://cv.levashev.eu/" />
+<title>1.3 Check Existing Account Login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1.3 Check Existing Account Login</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>var d=new Date(); String((&quot;0&quot; + d.getDate()).slice(-2))+String((&quot;0&quot;+(d.getMonth()+1)).slice(-2))+String(d.getFullYear()).substr(2,2)+String((&quot;0&quot;+d.getHours()).slice(-2))+String((&quot;0&quot;+d.getMinutes()).slice(-2))+String((&quot;0&quot;+d.getSeconds()).slice(-2));</td>
+	<td>username</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/partners/sign_in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create an account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_first_name</td>
+	<td>First Name Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_last_name</td>
+	<td>Last Name Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_company</td>
+	<td>Company Name Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_email</td>
+	<td>${username}@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_password</td>
+	<td>1234567890</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=affiliate_password_confirmation</td>
+	<td>1234567890</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.second-icon.fui-checkbox-checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.second-icon.fui-checkbox-checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.second-icon.fui-checkbox-checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[8]/label/span/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.b-body-header__name</td>
+	<td>Dashboard</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
