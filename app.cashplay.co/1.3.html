@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">New Test</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>https://app.cashplay.co/admin_users/sign_in</td>
 	<td></td>
@@ -24,7 +29,7 @@
 <tr>
 	<td>type</td>
 	<td>id=admin_user_password</td>
-	<td>abc12345</td>
+	<td>pd5EejgM3h8RFhf</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -35,11 +40,6 @@
 	<td>clickAndWait</td>
 	<td>link=Gaming</td>
 	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=h2</td>
-	<td>Games</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -107,6 +107,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeElementPresent</td>
+	<td>css=h2</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=h2</td>
 	<td>FAQ Pages</td>
@@ -127,13 +132,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=h2</td>
 	<td>Users</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//div/div/div[2]/ul/li[2]/a</td>
+	<td>open</td>
+	<td>https://app.cashplay.co/admin/customer_service/pending_payments</td>
 	<td></td>
 </tr>
 <tr>
@@ -145,11 +155,6 @@
 	<td>clickAndWait</td>
 	<td>link=Finance</td>
 	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=h2</td>
-	<td>Player Payments</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -193,17 +198,32 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
+	<td>link=Bonus paid out report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Bonus paid out report</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
 	<td>link=Player Payments</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTitle</td>
-	<td>Cashplay.co</td>
-	<td></td>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Player Payments</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Settings')])[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -237,6 +257,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>clickAndWait</td>
+	<td>link=User avatars</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=h2</td>
 	<td>User avatars</td>
@@ -257,18 +282,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>css=h2</td>
-	<td>Fraud protection</td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>link=Search IP Address</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeText</td>
-	<td>css=h2</td>
 	<td></td>
 </tr>
 <tr>
@@ -329,6 +344,11 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>link=CMS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Games</td>
 	<td></td>
 </tr>
 <tr>
@@ -482,6 +502,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Campaigns')])[2]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=h2</td>
 	<td>Deposit bonus campaigns</td>
@@ -495,6 +520,31 @@
 	<td>verifyText</td>
 	<td>css=h2</td>
 	<td>Deposit bonus campaign types</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Bonuses</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Event Bonus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Event Bonus</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Game Bonus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Games</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -533,27 +583,12 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Stats</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeText</td>
-	<td>css=nobr</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=th</td>
-	<td>Timestamp</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Back to admin</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
 	<td>link=WGT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=General</td>
 	<td></td>
 </tr>
 <tr>
@@ -574,11 +609,6 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Ready-go tournaments</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeText</td>
-	<td>css=h3</td>
 	<td></td>
 </tr>
 <tr>
